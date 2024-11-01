@@ -230,7 +230,7 @@ if __name__ == '__main__' :
                         print('You select the <EDIT> project ... Now enter your project name...', end='\n')
                         ProjectName: str = input("What is your project name? ")
                         createMovieStructure(ProjectName)
-                        break
+                        sys.exit(0)
                     except ValueError:
                         print('Please enter project name as string...')
                     except KeyboardInterrupt :
